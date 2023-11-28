@@ -18,6 +18,10 @@ function calcularBhaskara(){
     if(nB == 0 || nC == 0){
         alert("Equação de Segundo Grau Incompleta");
     }
+    if(nA == 0){
+        alert("Equação de Primeiro grau");
+        return;
+    }
     x1 = document.getElementById("x1");
     x2 = document.getElementById("x2"); 
     x1.innerHTML = parseFloat(-nB + Math.sqrt(deltaresp)) / (2 * nA);
